@@ -1,0 +1,188 @@
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Egg-tra Egg-citement</title>
+    <script type='text/javascript' src='jquery.js'></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+
+            $("img.a").hover(
+                function () {
+                    $(this).stop().animate({ "opacity": "0" }, "slow");
+                },
+                function () {
+                    $(this).stop().animate({ "opacity": "1" }, "slow");
+                });
+
+        });
+    </script>
+    <style>
+        div.fadehover {
+            position: relative;
+        }
+
+        img.a {
+            position: absolute;
+            left: 22px;
+            top: 55px;
+            z-index: 10;
+        }
+
+        img.b {
+            position: absolute;
+            left: 22px;
+            top: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fadehover">
+        <a href="tutorial.PNG" target="_blank"><img src="tutorial1.png" border="0" alt="" class="a"></a>
+        <img src="tutorial2.gif" border="0" alt="" class="b">
+    </div>
+</body>
+
+
+
+<link REL="SHORTCUT ICON" HREF="favicon.ico">
+
+
+
+<!-- BEGIN MENU -->
+
+
+
+<link rel="stylesheet" href="style2.css" type="text/css" media="screen">
+
+<div class="example">
+
+    <ul id="nav">
+        <table width="100%" align="left">
+
+            <tr>
+
+
+                <td align="left">
+
+                    <b> &nbsp; &nbsp;
+                        Yo Guest!</b>
+
+                </td>
+
+
+
+
+            </tr>
+
+        </table>
+    </ul>
+
+</div>
+
+
+<!-- END MENU -->
+
+
+
+<br>
+
+
+
+<body bgcolor="#000000">
+    <br>
+
+
+
+
+    <center>
+
+
+
+
+        <img src="images/tree.png">
+
+
+
+
+
+
+        <br><br>
+
+        <font face="Comic Sans MS" size="5" color="#0088FF"> "Missing Combination?" </font>
+
+
+
+
+
+
+        <br><br>
+
+
+
+
+        <font face="Arial, Helvetica, sans-serif" color="orange" size="3">
+            <div class="container">
+                <h1>Welcome to the Puzzle!</h1>
+                <p>Please enter the correct answer to proceed:</p>
+                <form id="answerForm">
+                    <input type="text" id="answerInput" placeholder="Enter your answer">
+                    <button type="submit">Submit</button>
+                </form>
+                <p id="errorMessage" style="display:none; color:red;">Incorrect answer. Please try again.</p>
+            </div>
+
+            <form action="level.php" method="POST">
+                <p><b>Answer:
+                        <input type="text" name="answer">
+                        <input type="submit" value="Submit">
+
+                        <input type="hidden" name="level" value="1">
+
+                        <input type="hidden" name="action" value="submitanswer"></b></p>
+
+                <p>
+                    <b>Reminder: all level answers will not contain spaces or capital letters.</b>
+                </p>
+            </form>
+
+
+            <br>
+
+
+
+
+            <!-- BEGIN LEVEL SELECTION -->
+
+
+            <form action="level.php" method="POST">
+
+                <p><b>Switch to level:
+                        <select name="level">
+
+                            <option value="1" selected>1</option>
+
+                            <option value="0">0</option>
+
+                        </select>
+
+
+                        <input type="submit" value="Go">
+                        <input type="hidden" name="action" value="viewlevel"></b></p>
+            </form>
+
+
+            <!-- END LEVEL SELECTION -->
+
+            <br><br><br>
+            
+    </center>
+<script src="scripts.js"></script>
+    
+</body>
+
+</html>
