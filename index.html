@@ -94,13 +94,6 @@
 
 
 <body bgcolor="#000000">
-    <audio id="myAudio" controls>
-        <source src="music/gumshoe.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-      <button onclick="playAudio()">Play</button>
-      <button onclick="pauseAudio()">Pause</button>
-      
     <br>
 
 
@@ -135,28 +128,6 @@
         <font face="Arial, Helvetica, sans-serif" color="orange" size="3">
             <div class="container">
                 <h1>Welcome to the Puzzle!</h1>
-                <p>Please enter the correct answer to proceed:</p>
-                <form id="answerForm">
-                    <input type="text" id="answerInput" placeholder="Enter your answer">
-                    <button type="submit">Submit</button>
-                </form>
-                <p id="errorMessage" style="display:none; color:red;">Incorrect answer. Please try again.</p>
-            </div>
-
-            <form action="level.php" method="POST">
-                <p><b>Answer:
-                        <input type="text" name="answer">
-                        <input type="submit" value="Submit">
-
-                        <input type="hidden" name="level" value="1">
-
-                        <input type="hidden" name="action" value="submitanswer"></b></p>
-
-                <p>
-                    <b>Reminder: all level answers will not contain spaces or capital letters.</b>
-                </p>
-            </form>
-
 
             <br>
 

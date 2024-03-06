@@ -8,8 +8,12 @@
 
 .level-number {
   font-size: 48px;
-  text-align: left;
+  text-align: center;
   color: #fdc437;
   font-family: "Impact", Arial, sans-serif;
   text-shadow: 2px 2px 1px white;
+}
+
+.p {
+  text-align: left;
 }

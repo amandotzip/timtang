@@ -10,12 +10,6 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
-<body>
-    <div class="fadehover">
-        <a href="tutorial.PNG" target="_blank"><img src="tutorial1.png" border="0" alt="" class="a"></a>
-        <img src="tutorial2.gif" border="0" alt="" class="b">
-    </div>
-</body>
 
 
 
@@ -64,39 +58,30 @@
     <br>
 
     <audio autoplay loop src="music/gumshoe.mp3"></audio>
+    <div class="centered-container">
 
-    <center>
         <div class="level-number">01</div>
         <img src="images/tree.png">
 
         <br><br>
 
-        <font face="Comic Sans MS" size="5" color="#0088FF"> "Missing Combination?" </font>
+        <font face="Comic Sans MS" size="5" color="#0088FF"> "Insert hint here?" </font>
 
         <br><br>
 
 
         <font face="Arial, Helvetica, sans-serif" color="orange" size="3">
             <div class="container">
-                <h1>Welcome to the Puzzle!</h1>
-                <p>Please enter the correct answer to proceed:</p>
+                
                 <form id="answerForm">
-                    <input type="text" id="answerInput" placeholder="Enter your answer">
+                   <b>Answer:</b> <input type="text" id="answerInput" placeholder="Enter your answer">
                     <button type="submit">Submit</button>
                 </form>
                 <p id="errorMessage" style="display:none; color:red;">Incorrect answer. Please try again.</p>
             </div>
 
             <form action="level.php" method="POST">
-                <p><b>Answer:
-                        <input type="text" name="answer">
-                        <input type="submit" value="Submit">
-
-                        <input type="hidden" name="level" value="1">
-
-                        <input type="hidden" name="action" value="submitanswer"></b></p>
-
-                <p>
+                <br />
                     <b>Reminder: all level answers will not contain spaces or capital letters.</b>
                 </p>
             </form>
@@ -130,7 +115,7 @@
 
             <br><br><br>
 
-    </center>
+        </div>
     <script src="scripts.js"></script>
 
 </body>

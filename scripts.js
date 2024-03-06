@@ -11,19 +11,18 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
     
     // Check answer based on the page
     var expectedAnswer;
-    alert(page)
     switch (page) {
         case 'level1':
             expectedAnswer = 'answer1';
-            nextLevel = 'level2.html';
+            nextLevel = 'level2.html?level=level2';
             break;
         case 'level2':
             expectedAnswer = 'answer2';
-            nextLevel = 'level3.html';
+            nextLevel = 'level3.html?level=level3';
             break;
         case 'level3':
             expectedAnswer = 'answer3';
-            nextLevel = 'levelfinal.html';
+            nextLevel = 'levelfinal.html?level=level4';
             break;
         // Add more cases as needed
         default:
