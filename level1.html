@@ -6,37 +6,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Egg-tra Egg-citement</title>
     <script type='text/javascript' src='jquery.js'></script>
-    <script type='text/javascript'>
-        $(document).ready(function () {
 
-            $("img.a").hover(
-                function () {
-                    $(this).stop().animate({ "opacity": "0" }, "slow");
-                },
-                function () {
-                    $(this).stop().animate({ "opacity": "1" }, "slow");
-                });
-
-        });
-    </script>
-    <style>
-        div.fadehover {
-            position: relative;
-        }
-
-        img.a {
-            position: absolute;
-            left: 22px;
-            top: 55px;
-            z-index: 10;
-        }
-
-        img.b {
-            position: absolute;
-            left: 22px;
-            top: 55px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -55,9 +26,6 @@
 <!-- BEGIN MENU -->
 
 
-
-<link rel="stylesheet" href="style2.css" type="text/css" media="screen">
-
 <div class="example">
 
     <ul id="nav">
@@ -69,7 +37,7 @@
                 <td align="left">
 
                     <b> &nbsp; &nbsp;
-                        Yo Guest!</b>
+                        Yo Conor!</b>
 
                 </td>
 
@@ -95,34 +63,17 @@
 <body bgcolor="#000000">
     <br>
 
-    <audio src="/music.mp3" autoplay></audio>
-
-
+    <audio autoplay loop src="music/gumshoe.mp3"></audio>
 
     <center>
-
-
-
-
+        <div class="level-number">01</div>
         <img src="images/tree.png">
-
-
-
-
-
 
         <br><br>
 
         <font face="Comic Sans MS" size="5" color="#0088FF"> "Missing Combination?" </font>
 
-
-
-
-
-
         <br><br>
-
-
 
 
         <font face="Arial, Helvetica, sans-serif" color="orange" size="3">
@@ -155,7 +106,6 @@
 
 
 
-
             <!-- BEGIN LEVEL SELECTION -->
 
 
@@ -179,10 +129,10 @@
             <!-- END LEVEL SELECTION -->
 
             <br><br><br>
-            
+
     </center>
-<script src="scripts.js"></script>
-    
+    <script src="scripts.js"></script>
+
 </body>
 
 </html>

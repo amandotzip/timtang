@@ -1,0 +1,15 @@
+.centered-container {
+  text-align: center;
+}
+
+.left-aligned-text {
+  text-align: left;
+}
+
+.level-number {
+  font-size: 48px;
+  text-align: left;
+  color: #fdc437;
+  font-family: "Impact", Arial, sans-serif;
+  text-shadow: 2px 2px 1px white;
+}
