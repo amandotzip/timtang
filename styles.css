@@ -14,6 +14,7 @@
   text-shadow: 2px 2px 1px white;
 }
 
-.p {
+p {
   text-align: left;
+  color: orange;
 }

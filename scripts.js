@@ -14,15 +14,15 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
     switch (page) {
         case 'level1':
             expectedAnswer = 'answer1';
-            nextLevel = 'level2.html?level=level2';
+            nextLevel = 'level2/level2.html?level=level2';
             break;
         case 'level2':
             expectedAnswer = 'answer2';
-            nextLevel = 'level3.html?level=level3';
+            nextLevel = 'level3/level3.html?level=level3';
             break;
         case 'level3':
             expectedAnswer = 'answer3';
-            nextLevel = 'levelfinal.html?level=level4';
+            nextLevel = 'level4/levelfinal.html?level=level4';
             break;
         // Add more cases as needed
         default:
@@ -31,7 +31,7 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
     
     // Check if the answer is correct
     if (answer === expectedAnswer) {
-        window.location.href = nextLevel; // Redirect to the next page if the answer is correct
+        window.location.href = "levels/" + nextLevel; // Redirect to the next page if the answer is correct
     } else {
         document.getElementById("errorMessage").style.display = "block"; // Display error message if the answer is incorrect
     }
