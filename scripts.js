@@ -8,30 +8,33 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
     var urlParams = new URLSearchParams(window.location.search);
     var page = urlParams.get('level');
     var nextLevel;
-    
     // Check answer based on the page
     var expectedAnswer;
+    alert(page)
+
     switch (page) {
         case 'level1':
-            expectedAnswer = 'answer1';
-            nextLevel = 'level2/level2.html?level=level2';
+            expectedAnswer = 'ohhimark';
+            nextLevel = 'level2/ohhimark.html?level=level2';
             break;
         case 'level2':
-            expectedAnswer = 'answer2';
-            nextLevel = 'level3/level3.html?level=level3';
+            expectedAnswer = 'drinkup';
+            nextLevel = 'level3/drinkup.html?level=level3';
             break;
         case 'level3':
-            expectedAnswer = 'answer3';
+            expectedAnswer = 'bergamot';
             nextLevel = 'level4/levelfinal.html?level=level4';
             break;
         // Add more cases as needed
         default:
             expectedAnswer = ''; // Default answer
     }
+    alert(answer)
+    alert(expectedAnswer)
     
     // Check if the answer is correct
     if (answer === expectedAnswer) {
-        window.location.href = "levels/" + nextLevel; // Redirect to the next page if the answer is correct
+        window.location.href = "../" + nextLevel; // Redirect to the next page if the answer is correct
     } else {
         document.getElementById("errorMessage").style.display = "block"; // Display error message if the answer is incorrect
     }
