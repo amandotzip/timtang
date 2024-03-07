@@ -10,7 +10,8 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
     var nextLevel;
     // Check answer based on the page
     var expectedAnswer;
-
+    alert(page)
+    alert(answer)
     switch (page) {
         case 'level1':
             expectedAnswer = 'ohhimark';
@@ -22,8 +23,41 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
             break;
         case 'level3':
             expectedAnswer = 'bergamot';
-            nextLevel = 'level4/levelfinal.html?level=level4';
+            nextLevel = 'level4/bergamot.html?level=level4';
             break;
+        case 'level4':
+            expectedAnswer = 'reeldeal';
+            nextLevel = 'level5/reeldeal.html?level=level5';
+            break;
+        case 'level5':
+            expectedAnswer = 'friday';
+            nextLevel = 'level6/friday.html?level=level6';
+            break;
+        case 'level6':
+            expectedAnswer = 'liveandletdie';
+            nextLevel = 'level7/liveandletdie.html?level=level7';
+            break;
+        case 'level7':
+            if(answer == 'vagabond'){
+                expectedAnswer = 'vagabond';
+                nextLevel = 'level7/vagabond.html';
+            }
+            else if(answer == 'vaga'){
+                expectedAnswer = 'vaga';
+                nextLevel = 'level8/vaga.html?level=level8';
+            }
+            break;
+        case 'level8':
+            if(answer == 'shoebox'){
+                expectedAnswer = 'shoebox';
+                nextLevel = 'level8/shoebox.html';
+            }
+            else if(answer == 'thisiswhereitends'){
+                expectedAnswer = 'thisiswhereitends';
+                nextLevel = 'levelend/ThisIsWhereItEnds.html';
+            }
+            break;
+        
         // Add more cases as needed
         default:
             expectedAnswer = ''; // Default answer
