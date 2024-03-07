@@ -54,7 +54,7 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
             }
             else if(answer == 'thisiswhereitends'){
                 expectedAnswer = 'thisiswhereitends';
-                nextLevel = 'levelend/ThisIsWhereItEnds.html';
+                nextLevel = 'levelend/thisiswhereitends.html';
             }
             break;
         
