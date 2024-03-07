@@ -1,5 +1,6 @@
 .centered-container {
   text-align: center;
+  margin: 300px;
 }
 
 .left-aligned-text {
@@ -8,7 +9,7 @@
 
 .level-number {
   font-size: 48px;
-  text-align: center;
+  text-align: left;
   color: #fdc437;
   font-family: "Impact", Arial, sans-serif;
   text-shadow: 2px 2px 1px white;
