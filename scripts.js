@@ -10,7 +10,6 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
     var nextLevel;
     // Check answer based on the page
     var expectedAnswer;
-    alert(page)
 
     switch (page) {
         case 'level1':
@@ -29,8 +28,6 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
         default:
             expectedAnswer = ''; // Default answer
     }
-    alert(answer)
-    alert(expectedAnswer)
     
     // Check if the answer is correct
     if (answer === expectedAnswer) {
