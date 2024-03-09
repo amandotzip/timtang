@@ -10,8 +10,6 @@ document.getElementById("answerForm").addEventListener("submit", function(event)
     var nextLevel;
     // Check answer based on the page
     var expectedAnswer;
-    alert(page)
-    alert(answer)
     switch (page) {
         case 'level1':
             expectedAnswer = 'ohhimark';
