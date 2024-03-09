@@ -30,7 +30,7 @@ p {
   font-family: Arial, Helvetica, sans-serif";
 }
 img {
-  /* max-width: 1000px;  */
+  max-width: 1000px; 
   margin: auto;
   display: block;
 }
